@@ -26,6 +26,7 @@ laraval
 in .bashrc:
 >alias laravel=$HOME'/.config/composer/vendor/laravel/installer/bin/laravel'
 >laravel new ownInstaGram
+>cd ownInstaGram/
 
 auth
 >composer require laravel/ui
@@ -39,6 +40,14 @@ npm
 
 sqlite
 >touch database/database.sqlite
+
+in .env change to 
+DB_CONNECTION=sqlite
+
+>sudo dpkg --configure -a
+>sudo apt-get install php-sqlite3
+>php artisan migrate -v
+
 
 
 ## About Laravel
