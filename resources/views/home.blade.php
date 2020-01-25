@@ -1,22 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<div class="container" style="border:solid black">
+    <div class="row">
+        <div class="col-3" style="border:solid red">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+            <img src="/svg/atom.svg" class="rounded-circle ml-5"; style="height:150px; border:solid red"> 
 
-                    You are logged in!
-                </div>
+        </div>
+        <div class="col-9">
+            <div><h1>myInstaGram</h1></div>
+
+            <div class="d-flex">
+                <div class="pr-3"><strong>123</strong> posts</div>
+                <div class="pr-3"><strong>23k</strong> followers</div>
+                <div class="pr-3"><strong>231</strong> following</div>
             </div>
+
         </div>
     </div>
 </div>
