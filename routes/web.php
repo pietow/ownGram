@@ -17,4 +17,5 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//restful Resource Controller with Action show
+Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
