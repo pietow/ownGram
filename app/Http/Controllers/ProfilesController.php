@@ -15,7 +15,8 @@ class ProfilesController extends Controller
         $user = User::findOrFail($user);
 
         //pass data to the view
-        return view('home', [
+        //directory view ---> profiles ---> index.blade.php
+        return view('profiles.index', [
             'user' => $user,
         ]);
     }
