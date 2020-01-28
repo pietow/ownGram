@@ -17,9 +17,9 @@ class CreateProfilesTable extends Migration
             $table->bigIncrements('id');
             //connect to the users table via reference to user table
             $table->unsignedBigInteger('user_id');
-           // $table->string('title')->nullable();
-           // $table->text('description')->nullable();
-           // $table->string('url')->nullable();
+            $table->string('title')->nullable();
+            $table->text('description')->nullable();
+            $table->string('url')->nullable();
             $table->timestamps();
 
             //for searchability and quicker queries 

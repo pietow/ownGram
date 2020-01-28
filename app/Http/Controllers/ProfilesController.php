@@ -12,7 +12,7 @@ class ProfilesController extends Controller
     {
         //dd = die and dump
         //dd(User::find($user));
-        $user = User::find($user);
+        $user = User::findOrFail($user);
 
         //pass data to the view
         return view('home', [

@@ -8,6 +8,7 @@
             <img src="/svg/atom.svg" class="rounded-circle ml-5"; style="height:150px"> 
         </div>
 
+
         <div class="col-9">
             <!--mustache syntax for echoing out-->
             <div><h1>{{ $user->username }}</h1></div>
@@ -16,11 +17,9 @@
                 <div class="pr-3"><strong>23k</strong> followers</div>
                 <div class="pr-3"><strong>231</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">www.me.com</div>
-            <div>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
-                 Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
-                  Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </div>
-            <div><a href="#">www.me.com</a></div>    
+            <div class="pt-4 font-weight-bold">{{$user-> profile->title}}</div>
+            <div>{{$user->profile->description ?? 'arrr'}}</div>
+            <div><a href="#">{{$user->profile->url ?? 'N/A'}}</a></div>    
         </div>
 
     </div>
