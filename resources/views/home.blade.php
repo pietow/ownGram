@@ -11,7 +11,13 @@
 
         <div class="col-9">
             <!--mustache syntax for echoing out-->
-            <div><h1>{{ $user->username }}</h1></div>
+            <div class="                    @error('caption')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>d-flex justify-content-between align-items-baseline">
+            <h1>{{ $user->username }}</h1>
+            <a href="#">Add New Post</a>
+            </div>
+
             <div class="d-flex">
                 <div class="pr-3"><strong>123</strong> posts</div>
                 <div class="pr-3"><strong>23k</strong> followers</div>

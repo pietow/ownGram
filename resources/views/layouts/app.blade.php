@@ -82,7 +82,7 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            @yield('content') <!--you can yield scripts titles, sections and so on-->
         </main>
     </div>
 </body>
