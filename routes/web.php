@@ -21,5 +21,7 @@ Auth::routes();
 //goes to the PostsController and hits the create method
 Route::get('/p/create', 'PostsController@create');
 
+Route::post('/p', 'PostsController@store');
+
 //restful Resource Controller with Action show
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
