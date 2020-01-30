@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <label for="image" class="col-md-4 col-form-label">Post Image</label>
-                <input type="file" class="form-control-file" name="image" id="image">
+                <input type="file" class="form-control-file" name="image" id="image" required>
 
                     @error('image')
                     <span class="invalid-feedback" role="alert">
