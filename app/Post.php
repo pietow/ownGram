@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+    //tells laravel not to protect any field of post $data
+    protected $guarded = [];
     public function user()
     {
         return $this->belongsTo(User::class);
