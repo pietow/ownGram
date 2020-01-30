@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
+/**
+ * Class constructor.
+ */
+public function __construct()
+{
+  //protects create and post route
+  $this->middleware('auth');
+}
+
+
   public function create()
   {
     return view('posts.create'); //directory posts --> file create.blade.php
