@@ -39,9 +39,8 @@ public function __construct()
 
     $data = request()->validate([
       'caption' => 'required',
-      'image' => 'required', 'image',
-    ]);
-    
+      'image'   => ['required', 'image'],
+    ]); 
     //like in tinker:
    // $post = new \App\Post();
    // $post->caption = $data['caption'];
@@ -49,13 +48,23 @@ public function __construct()
 
    //shorter \App\Post::create($data); throws an Integrity constraint violation error, because id is not passed
 
+    $imagePath = request('image')->store('uploads', 'public'); //store(PATH, driver: e.g. s3); s3 for amazon storage
+//laravel creates in storage/app/public a uploads directory with the image file
+
+  // but storage/app/public is not accessable -->  storage:link = Create a symbolic link from "public/storage" to "storage/app/public"
+
+
    //grap the authenticated user then go into their posts and create, laravel graps the user id automatically
-   auth()->user()->posts()->create($data);
+   //auth()->user()->posts()->create($data);
+   auth()->user()->posts()->create([
+     'caption' => $data['caption'],
+     'image'   => $imagePath,
+   ]);
 
-
+  return redirect('/profile/' . auth()->user()->id);  
     
     //retrieve all of the input data as an array using the all method
-    dd(request()->all());
+    //dd(request()->all());
 
    // dd(request()->input("caption"));
    // dd(request()->file('image'));
