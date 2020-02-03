@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 
 class PostsController extends Controller
@@ -53,6 +54,8 @@ public function __construct()
 
   // but storage/app/public is not accessable -->  storage:link = Create a symbolic link from "public/storage" to "storage/app/public"
 
+  $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200, 1200); //fit(width, height)
+  $image->save();
 
    //grap the authenticated user then go into their posts and create, laravel graps the user id automatically
    //auth()->user()->posts()->create($data);

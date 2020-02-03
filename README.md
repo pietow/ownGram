@@ -48,7 +48,9 @@ DB_CONNECTION=sqlite
 >sudo apt-get install php-sqlite3
 >php artisan migrate -v
 
-
+external php libary for Image 
+>composer require intervention/image 
+>sudo apt-get install php7.4-gd
 
 ## About Laravel
 
