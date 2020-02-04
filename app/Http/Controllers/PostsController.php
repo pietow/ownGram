@@ -36,8 +36,8 @@ public function __construct()
     //$data = request()->validate(array('caption' => 'required','image' => 'required',));
     $data = request()->validate([
       'caption' => 'required',
-      'image'   => ['required', 'image'],
-    ]); 
+      'image'   => ['required', 'mimes:jpeg,png,bmp,tiff'],
+    ]);
     //like in tinker:
    // $post = new \App\Post();
    // $post->caption = $data['caption'];

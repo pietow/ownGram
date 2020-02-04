@@ -74,7 +74,7 @@
 
             </div>
             <div class="row pt-4">
-                <button class="btn btn-primary">Add new Post</button>
+                <button class="btn btn-primary">Save Profile</button>
             </div>
         </div>
     </div>

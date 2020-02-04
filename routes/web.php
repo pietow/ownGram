@@ -17,12 +17,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//order of the Routes does matter; anything with a variable should be at the end
+
+//goes to the PostsController and hits the create method
+Route::get('/p/create', 'PostsController@create');
 
 //{post}- variabel is going to hit our PostsController 
 Route::get('/p/{post}', 'PostsController@show');
 
-//goes to the PostsController and hits the create method
-Route::get('/p/create', 'PostsController@create');
 
 Route::post('/p', 'PostsController@store');
 
