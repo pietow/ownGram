@@ -5,17 +5,31 @@
     <div class="row">
 
         <div class="col-3">
-            <img src="/svg/atom.svg" class="rounded-circle ml-5" ; style="height:150px">
+            <img src="{{ $user->profile->profileImage() }}" class="rounded-circle ml-5" ; style="height:150px">
         </div>
 
 
         <div class="col-9">
             <!--mustache syntax for echoing out-->
             <div class="d-flex justify-content-between align-items-baseline">
-                <h1>{{ $user->username }}</h1>
+                <div class="d-flex align-items-center pb-3">
+
+                    <div class="h4">
+                        {{ $user->username }}
+                    </div>
+
+                    <button class="btn btn-primary ml-4">Follow</button>
+
+                </div>
+
+                @can('update', $user->profile)
                 <a href="/p/create">Add New Post</a>
+                @endcan
             </div>
+
+            @can('update', $user->profile)
             <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
+            @endcan
 
             <div class="d-flex">
                 <div class="pr-3"><strong>{{$user->posts->count()}}</strong> posts</div>
