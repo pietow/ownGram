@@ -30,7 +30,7 @@ bla
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
                 <!--Lavaral start in public--> 
                        <div><img src="/svg/atom.svg" style='height:20px;
-                        border-right: solid 2px #333'; class= 'pr-3'></div> 
+                        border-right: solid 2px #333' class= 'pr-3'></div> 
                        <div class='pl-3 pb-1'>myInstaGram</div> 
                 </a>
                 <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
