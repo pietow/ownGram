@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test', function () {
+    return view('profiles.test');
+});
+
 Auth::routes();
 
 //order of the Routes does matter; anything with a variable should be at the end
