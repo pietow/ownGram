@@ -6,13 +6,15 @@
 
 <script>
 export default {
+  props: ["userId"],
+
   mounted() {
     console.log("Component mounted.");
   },
 
   methods: {
     handleClick: function() {
-      axios.post("/follow/1").then(response => {
+      axios.post("/follow/" + this.userId).then(response => {
         alert(response.data);
       });
     }

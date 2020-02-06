@@ -17,7 +17,8 @@
                     <div class="h4">
                         {{ $user->username }}
                     </div>
-                    <follow-button></follow-button>
+                    <!--user-id is data field for vue called props-->
+                    <follow-button user-id="{{ $user->id }}"></follow-button>
                 </div>
 
                 @can('update', $user->profile)

@@ -19,10 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::post('follow/{user}', function () {
-    return ['success'];
-});
-
+Route::post('follow/{user}', 'FollowsControllers@store');
 //order of the Routes does matter; anything with a variable should be at the end
 
 //goes to the PostsController and hits the create method
