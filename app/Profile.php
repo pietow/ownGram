@@ -16,6 +16,12 @@ public function profileImage()
    return '/storage/' . $imagePath;
 }
 
+//profile has many Users (=followers)
+public function followers()
+{
+    return $this->belongsToMany(User::class);
+}
+
     //fetch from User model
     public function user()
     {

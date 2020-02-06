@@ -9,6 +9,7 @@ class FollowsControllers extends Controller
 {
   function store(User $user)
   {
-    return $user->username;
+    //user() method is in Guard.php defined and returns $user if logged in
+    return auth()->user()->following()->toggle($user->profile);
   } 
 }

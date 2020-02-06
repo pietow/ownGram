@@ -47,6 +47,10 @@ DB_CONNECTION=sqlite
 >sudo dpkg --configure -a
 >sudo apt-get install php-sqlite3
 >php artisan migrate -v
+to create new tables:
+>php artisan make:migration creates_profile_user_pivot_table --create profile_user
+to migrate new create_tables use:
+>php artisan migrate
 
 external php libary for Image 
 >composer require intervention/image 

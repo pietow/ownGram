@@ -50,6 +50,12 @@ class User extends Authenticatable
         });
     }
 
+    //User is following many Profiles
+    public function following()
+    {
+        return $this->belongsToMany(Profile::class);
+    }
+
     public function posts()
     {
         return $this->hasMany(Post::class)->orderBy('created_at', 'DESC');//class name is Post not Posts!
