@@ -1,0 +1,315 @@
+[34m  0[39m: User:: all();
+[34m  1[39m: exit
+[34m  2[39m: User:: all();
+[34m  3[39m: exit
+[34m  4[39m: User:: all();
+[34m  5[39m: exit
+[34m  6[39m: $profile
+[34m  7[39m: $profile = new \App\Profile();
+[34m  8[39m: $profile
+[34m  9[39m: $profile->title = 'cool title';
+[34m 10[39m: $profile->title
+[34m 11[39m: $profile->bla='yeah'
+[34m 12[39m: $profile
+[34m 13[39m: $profile->description='description';
+[34m 14[39m: $profile->save();
+[34m 15[39m: $profile = new \App\Profile();
+[34m 16[39m: $profile
+[34m 17[39m: $profile->title = 'cool title';
+[34m 18[39m: $profile->description='description';
+[34m 19[39m: $profile->save();
+[34m 20[39m: $profile->user_id=1;
+[34m 21[39m: $profile->save();
+[34m 22[39m: $profile
+[34m 23[39m: $profile->url='www.me.com';
+[34m 24[39m: $profile->save();
+[34m 25[39m: $profile
+[34m 26[39m: $profile->user;
+[34m 27[39m: exit
+[34m 28[39m: $profile
+[34m 29[39m: $profile = new /App/Profile();
+[34m 30[39m: $profile = new App/Profile();
+[34m 31[39m: $profile = new \App\Profile();
+[34m 32[39m: $profile->user_id = 1;
+[34m 33[39m: $profile->save();
+[34m 34[39m: exit
+[34m 35[39m: $profile = new \App\Profile();
+[34m 36[39m: $profile->user_id = 1;
+[34m 37[39m: $profile->save();
+[34m 38[39m: exit
+[34m 39[39m: $profile = new \App\Profile();
+[34m 40[39m: $profile->user_id = 1;
+[34m 41[39m: $profile->save();
+[34m 42[39m: $profile->title = 'cool title';
+[34m 43[39m: $profile->save();
+[34m 44[39m: $profile->description='description';
+[34m 45[39m: $profile->save();
+[34m 46[39m: $profile->url='www.me.com';
+[34m 47[39m: $profile->save();
+[34m 48[39m: $profile->user;
+[34m 49[39m: exit
+[34m 50[39m: exit
+[34m 51[39m: $profile = new \App\Profile();
+[34m 52[39m: $profile->user_id = 1;
+[34m 53[39m: $profile->save();
+[34m 54[39m: exit
+[34m 55[39m: $profile = new \App\Profile();
+[34m 56[39m: $profile->user_id = 1;
+[34m 57[39m: $profile->save();
+[34m 58[39m: $profile->title = 'cool title';
+[34m 59[39m: $profile->save();
+[34m 60[39m: $profile->user_id = 1;
+[34m 61[39m: exit
+[34m 62[39m: $profile->user_id = 1;
+[34m 63[39m: $profile->save();
+[34m 64[39m: $profile = new \App\Profile();
+[34m 65[39m: $profile->user_id = 1;
+[34m 66[39m: $profile->save();
+[34m 67[39m: $profile->user;
+[34m 68[39m: $profile;
+[34m 69[39m: $profile->title = 'cool title';
+[34m 70[39m: $profile;
+[34m 71[39m: $profile->save();
+[34m 72[39m: $profile;
+[34m 73[39m: exit
+[34m 74[39m: $profile = new \App\Profile();
+[34m 75[39m: $profile->user_id = 1;
+[34m 76[39m: $profile->save();
+[34m 77[39m: $profile->user;
+[34m 78[39m: $profile;
+[34m 79[39m: exit
+[34m 80[39m: $user = App\User::find(1);
+[34m 81[39m: User:: all();
+[34m 82[39m: $user = App\User::find(2);
+[34m 83[39m: echo $user::id;
+[34m 84[39m: echo $user->id;
+[34m 85[39m: $user->id;
+[34m 86[39m: $user1 = $user->id(1);
+[34m 87[39m: $user->id=1;
+[34m 88[39m: $user1 = $user->id()=1;
+[34m 89[39m: $user = new App\User;
+[34m 90[39m: $user.id
+[34m 91[39m: $user.id;
+[34m 92[39m: $user.id();
+[34m 93[39m: get_object_vars($user);
+[34m 94[39m: get_class($user)
+[34m 95[39m: get_class_var(get_class($user))
+[34m 96[39m: get_class_vars(get_class($user))
+[34m 97[39m: get_object_vars($user)
+[34m 98[39m: App\User::find(1);
+[34m 99[39m: App\User::all();
+[34m100[39m: gettype(App\User)
+[34m101[39m: gettype(App\User);
+[34m102[39m: gettype($User);
+[34m103[39m: gettype($user);
+[34m104[39m: gettype($user::find(1));
+[34m105[39m: gettype($user::all());
+[34m106[39m: get_declared_classes()
+[34m107[39m: $user-> username
+[34m108[39m: $user = new App\User(1);
+[34m109[39m: $user = new App\User;
+[34m110[39m: $user-> username
+[34m111[39m: $user::all();
+[34m112[39m: $user::find(Test);
+[34m113[39m: $user::find("Test User");
+[34m114[39m: $user::count()
+[34m115[39m: \DB::select('show tables')
+[34m116[39m: \DB
+[34m117[39m: DB::select('SELECT NAME FROM sqlite_master WHERE type="table"');
+[34m118[39m: DB::select('show tables');
+[34m119[39m: DB::select(SELECT name FROM sqlite_master);
+[34m120[39m: WHERE type='table'
+[34m121[39m: DB::select('SELECT name FROM sqlite_master WHERE type='table' ORDER BY name');
+[34m122[39m: DB::select('SELECT name FROM sqlite_master WHERE type="table" ORDER BY name');
+[34m123[39m: DB::select('SELECT "users" FROM sqlite_master');
+[34m124[39m: DB::select('SELECT "users" FROM sqlite_master WHERE type="table"');
+[34m125[39m: DB::select('SELECT "profiles" FROM sqlite_master WHERE type="table"');
+[34m126[39m: $user
+[34m127[39m: $user->profile
+[34m128[39m: $user = App\User::find(1)
+[34m129[39m: $user->profile
+[34m130[39m: $profile->description ='Description';
+[34m131[39m: $profile = new \App\Profile();
+[34m132[39m: $profile->description ='Description';
+[34m133[39m: $profile
+[34m134[39m: $profile->user_id = 1;
+[34m135[39m: $profile
+[34m136[39m: $profile->user
+[34m137[39m: $profile
+[34m138[39m: $profile->title='Cool title'
+[34m139[39m: $profile
+[34m140[39m: $profile->save()
+[34m141[39m: $profile->save();
+[34m142[39m: $profile->push();
+[34m143[39m: $user = App\User::find(1);
+[34m144[39m: $user->
+profile
+[34m145[39m: $profile 
+[34m146[39m: $profile->desciption='description'
+[34m147[39m: $profile
+[34m148[39m: $profile->desciption1='description'
+[34m149[39m: $profile
+[34m150[39m: $profile->save()
+[34m151[39m: exit
+[34m152[39m: $user = App\User::find(1);
+[34m153[39m: $profile = new \App\Profile();
+[34m154[39m: $profile -> user_id=1
+[34m155[39m: $profile
+[34m156[39m: $user->profile
+[34m157[39m: App\Profile::all()
+[34m158[39m: App\Profile::find(1)
+[34m159[39m: $profile=App\Profile::find(1)
+[34m160[39m: $profile->description="MyDesscription"
+[34m161[39m: $profile->save()
+[34m162[39m: $user->profile->description='MyDescription'
+[34m163[39m: $user->save()
+[34m164[39m: $user
+[34m165[39m: $profile 
+[34m166[39m: $profile->save()
+[34m167[39m: $user->push()
+[34m168[39m: $profile->save()
+[34m169[39m: $profile
+[34m170[39m: $user
+[34m171[39m: $user->push();
+[34m172[39m: $profile
+[34m173[39m: $user->profile->url='www.me.org';
+[34m174[39m: $user->save();
+[34m175[39m: $user
+[34m176[39m: $profile
+[34m177[39m: $user->push();
+[34m178[39m: $profile
+[34m179[39m: exit
+[34m180[39m: DB::select('SELECT "users" FROM sqlite_master WHERE type="table"');
+[34m181[39m: DB::select('SELECT "profiles" FROM sqlite_master WHERE type="table"');
+[34m182[39m: #3041
+[34m183[39m: {#3041
+       +""profiles"": "profiles",
+[34m184[39m: App\Profiles
+[34m185[39m: App\Profile
+[34m186[39m: App\profile
+[34m187[39m: \App\Profile();
+[34m188[39m: \App\Profile()
+[34m189[39m: \App\Profile(2)
+[34m190[39m: \App\Profile(1)->user
+[34m191[39m: App\User::find(1)->profile
+[34m192[39m: $profile = App\User::find(1)->profile;
+[34m193[39m: $user = App\User::find(1);
+[34m194[39m: exit
+[34m195[39m: App\Posts::find(1)
+[34m196[39m: App\Posts
+[34m197[39m: App\Users
+[34m198[39m: App\User
+[34m199[39m: App\Profile
+[34m200[39m: App\Profile::find(1)
+[34m201[39m: App\Post::find(1)
+[34m202[39m: exit
+[34m203[39m: Post()::all()
+[34m204[39m: Post::all()
+[34m205[39m: Post::all();
+[34m206[39m: exit
+[34m207[39m: Post::all();
+[34m208[39m: exit
+[34m209[39m: Post::all()
+[34m210[39m: DB:table('posts')
+[34m211[39m: DB:table('post')
+[34m212[39m: DB:table('Post')
+[34m213[39m: DB::table('user')->get();
+[34m214[39m: DB::table('users')->get();
+[34m215[39m: DB::table('profiles')->get();
+[34m216[39m: DB::table('posts')->get();
+[34m217[39m: DB::connection()->getDatabaseName();
+[34m218[39m: App\users:all()
+[34m219[39m: App\users::all()
+[34m220[39m: App\user::all()
+[34m221[39m: App\User::find(2);
+[34m222[39m: App\Post::find(2);
+[34m223[39m: App\Post::find(1)->delete();
+[34m224[39m: App\Post::all();
+[34m225[39m: App\Post::find(2)->delete();
+[34m226[39m: App\Post::find(3)->delete();
+[34m227[39m: App\Post::find(4)->delete();
+[34m228[39m: App\Post->save();
+[34m229[39m: App\User->push();
+[34m230[39m: Post::truncate()
+[34m231[39m: exit
+[34m232[39m: \App\User::all()
+[34m233[39m: \App\Profile::all()
+[34m234[39m: DB::table('user')->get();
+[34m235[39m: DB:table('Post')
+[34m236[39m: DB:table('post')
+[34m237[39m: DB::select('SELECT "users" FROM sqlite_master WHERE type="table"');
+[34m238[39m: DB::select('SELECT "profiles" FROM sqlite_master WHERE type="table"');
+[34m239[39m: $user = \App\User
+[34m240[39m: $user = new \App\User
+[34m241[39m: $user::all()
+[34m242[39m: $user->all()
+[34m243[39m: $user->profile
+[34m244[39m: exit
+[34m245[39m: \App\User::all()
+[34m246[39m: \App\User->profile::all()
+[34m247[39m: \App\User->profile
+[34m248[39m: \App\User->profiles
+[34m249[39m: \App\Profile
+[34m250[39m: \App\Profiles
+[34m251[39m: \App\Post
+[34m252[39m: \App\Posts
+[34m253[39m: \App\User::posts
+[34m254[39m: \App\User::posts()
+[34m255[39m: $user = new \App\User
+[34m256[39m: \App\User->profiles
+[34m257[39m: \App\User->profile
+[34m258[39m: $user->profile
+[34m259[39m: $user
+[34m260[39m: \App\User::all()
+[34m261[39m: \App\User::find()
+[34m262[39m: DB::table('users')->get();
+[34m263[39m: DB::table('profiles')->get();
+[34m264[39m: DB::table('posts')->get();
+[34m265[39m: exit
+[34m266[39m: User::class
+[34m267[39m: Profile::class
+[34m268[39m: bla::class
+[34m269[39m: $test = User::class
+[34m270[39m: $test
+[34m271[39m: gettype($test)
+[34m272[39m: \App\User
+[34m273[39m: App\User
+[34m274[39m: $test = new App\User
+[34m275[39m: gettype($test)
+[34m276[39m: exit
+[34m277[39m: $user = User::find(1); 
+[34m278[39m: $user->following()
+[34m279[39m: $user->following()
+[34m280[39m: $user->fresh()->following()
+[34m281[39m: $user->fresh()->following(),
+[34m282[39m: $user->fresh()->following();
+[34m283[39m: $user->fresh()->following();
+[34m284[39m: $user = User::find(1);
+[34m285[39m: $user->following()
+[34m286[39m: exit
+[34m287[39m: $user = User::find(1);
+[34m288[39m: $user->following()
+[34m289[39m: $user = User::find()
+[34m290[39m: $user = User::all()
+[34m291[39m: $user = User::find(1);
+[34m292[39m: $user->following()
+[34m293[39m: $user->fresh()->following();
+[34m294[39m: \App\User
+[34m295[39m: App\User
+[34m296[39m: App\Profile
+[34m297[39m: App\Posts
+[34m298[39m: App\Posts::find(1)
+[34m299[39m: $profile=App\Profile::find(1)
+[34m300[39m: $profile->follower()
+[34m301[39m: $profile->followers()
+[34m302[39m: xit
+[34m303[39m: exit
+[34m304[39m: factory('App\Post')->create(); 
+[34m305[39m: App\Post
+[34m306[39m: App\User
+[34m307[39m: \App\User
+[34m308[39m: \App\User
+[34m309[39m: /App/User
+[34m310[39m: App/User
+[34m311[39m: \App\User::all()
+[34m312[39m: DB::connection()->getDatabaseName();

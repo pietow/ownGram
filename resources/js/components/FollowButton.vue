@@ -15,7 +15,7 @@ export default {
   methods: {
     handleClick: function() {
       axios.post("/follow/" + this.userId).then(response => {
-        alert(response.data);
+        console.log(response.data);
       });
     }
   }
