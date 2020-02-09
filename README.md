@@ -56,6 +56,14 @@ external php libary for Image
 >composer require intervention/image 
 >sudo apt-get install php7.4-gd
 
+telescope:
+>composer require laravel/telescope
+>php artisan telescope:install
+>php artisan migrate
+
+now you can visit domain_name/telescope
+it hooks up into your project
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
