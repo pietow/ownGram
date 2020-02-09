@@ -12,6 +12,8 @@ class ProfilesController extends Controller
     //gives id of the user
     public function index(User $user)
     {
+        //checks if user is authenticated and if that user is following the profile(of same or different user)
+        $follows = (auth()->user()) ? auth()->user()->following->contains($user->id) : false;
         //dd = die and dump
         //dd(User::find($user));
         //$user = User::findOrFail($user);
@@ -19,7 +21,7 @@ class ProfilesController extends Controller
         //pass data to the view
         //directory view ---> profiles ---> index.blade.php
         //return view('profiles.index', ['user' => $user,]);
-        return view('profiles.index', compact('user'));
+        return view('profiles.index', compact('user', 'follows'));
     }
 
     public function edit(User $user)
