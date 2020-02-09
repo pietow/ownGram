@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
 
@@ -22,6 +19,7 @@ Auth::routes();
 Route::post('follow/{user}', 'FollowsControllers@store');
 //order of the Routes does matter; anything with a variable should be at the end
 
+Route::get('/','PostsController@index');
 //goes to the PostsController and hits the create method
 Route::get('/p/create', 'PostsController@create');
 
