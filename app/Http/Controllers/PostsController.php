@@ -21,7 +21,8 @@ public function __construct()
   {
     $users = auth()->user()->following()->pluck('profiles.user_id');
     //$posts = Post::whereIn('user_id', [1,2,3])->orderBy('created_at', 'DESC')->get();
-    $posts = Post::whereIn('user_id', [1,2,3])->latest()->get();
+    //$posts = Post::whereIn('user_id', [1,2,3])->latest()->get();
+    $posts = Post::whereIn('user_id', [1,2,3])->latest()->paginate(2);
 
     return view('posts.index', compact('posts'));
   }

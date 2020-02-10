@@ -16,11 +16,6 @@
 
     <div class="row pt-2 pb-4">
         <div class="col-6 offset-3">
-
-
-
-
-
             <p>
                 <span class="font-weight-bold">
                     <a href="/profile/{{$post->user->id}}"> <span class="text-dark">{{ $post->user->username }}</span>
@@ -28,12 +23,17 @@
                 </span>
                 {{$post->caption}}
             </p>
-
         </div>
     </div>
 
-
-
     @endforeach
+
+    <div class="row-">
+        <div class="col-12 d-flex justify-content-center">
+            <!--This spezial links gets added, whenever we call the padination in the controller-->
+            {{ $posts->links() }}
+        </div>
+    </div>
+
 </div>
 @endsection
