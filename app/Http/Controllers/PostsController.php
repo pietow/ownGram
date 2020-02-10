@@ -22,7 +22,9 @@ public function __construct()
     $users = auth()->user()->following()->pluck('profiles.user_id');
     //$posts = Post::whereIn('user_id', [1,2,3])->orderBy('created_at', 'DESC')->get();
     //$posts = Post::whereIn('user_id', [1,2,3])->latest()->get();
-    $posts = Post::whereIn('user_id', [1,2,3])->latest()->paginate(2);
+    //$posts = Post::whereIn('user_id', [1,2,3])->latest()->paginate(2);
+    //with('user') solves the (n+1)-Problem when looping over posts in posts.index
+    $posts = Post::whereIn('user_id', $users)->with('user')->latest()->paginate(2);
 
     return view('posts.index', compact('posts'));
   }
