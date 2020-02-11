@@ -1,12 +1,9 @@
 @component('mail::message')
-# Introduction
+# Welcome to my OwnGram
 
-The body of your message.
+Thank you for joining!
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
 
-Thanks,<br>
-{{ config('app.name') }}
+All the best,<br>
+Piet
 @endcomponent

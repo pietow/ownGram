@@ -11,10 +11,14 @@
 |
 */
 
-
+use App\Mail\NewUserWelcomeMail;
 
 
 Auth::routes();
+
+Route::get('/email', function () {
+    return new NewUserWelcomeMail();
+});
 
 Route::post('follow/{user}', 'FollowsControllers@store');
 //order of the Routes does matter; anything with a variable should be at the end
